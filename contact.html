@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | SK Events</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: black;
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #111;
+      padding: 15px 40px;
+      border-bottom: 2px solid gold;
+    }
+
+    .logo {
+      height: 70px;
+      border-radius: 8px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: gold;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover, .active {
+      color: white;
+    }
+
+    .book-btn {
+      background-color: gold;
+      color: black;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .book-btn:hover {
+      background-color: white;
+      color: black;
+    }
+
+    /* ===== CONTACT SECTION ===== */
+    .contact {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .contact h1 {
+      color: gold;
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    .contact p {
+      color: #ddd;
+      font-size: 1.1em;
+      line-height: 1.6;
+      margin: 10px 0;
+    }
+
+    .contact a {
+      color: gold;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .contact a:hover {
+      color: white;
+    }
+
+    .contact .numbers {
+      margin: 25px 0;
+    }
+
+    .contact .numbers p {
+      margin: 8px 0;
+      font-size: 1.1em;
+    }
+
+    iframe {
+      width: 90%;
+      height: 350px;
+      border: 2px solid gold;
+      border-radius: 12px;
+      margin-top: 30px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #111;
+      border-top: 2px solid gold;
+      color: gold;
+      font-size: 0.9em;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      iframe {
+        width: 95%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <img src="logo.jpg" alt="SK Events Logo" class="logo">
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+
+    <a href="https://www.instagram.com/sk_events_firework_decorations" target="_blank" class="book-btn">Book Now</a>
+  </header>
+
+  <section class="contact">
+    <h1>Contact Us</h1>
+    <p>We’d love to make your special day unforgettable!</p>
+
+    <div class="numbers">
+      <p><strong>📞 Faiz Shaikh:</strong> <a href="tel:+918087710386">+91 80877 10386</a></p>
+      <p><strong>📞 Aftab:</strong> <a href="tel:+918888099649">+91 88880 99649a></p>
+    </div>
+
+    <p><strong>📧 Email:</strong> <a href="mailto:skfaiz9767@gmail.com">skfaiz9767@gmail.com</a></p>
+    <p><strong>📍 Location:</strong> Pune, Maharashtra, India</p>
+
+    <!-- ===== GOOGLE MAP ===== -->
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.579043992878!2d73.93128037497281!3d18.50139127133186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c10b3b5d13a3%3A0xd4b5cbf3c181fb15!2sB-6%2C%20Lane%20Number%2025%2C%20A.%20Sayyed%20Nagar%2C%20Hadapsar%2C%20Pune%2C%20Maharashtra%20411028!5e0!3m2!1sen!2sin!4v1730991100000!5m2!1sen!2sin" 
+      allowfullscreen="" loading="lazy">
+    </iframe>
+  </section>
+
+  <footer>
+    © 2025 SK Events | Firework & Decoration | All Rights Reserved
+  </footer>
+
+</body>
+</html>
