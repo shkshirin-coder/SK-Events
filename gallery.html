@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | SK Events</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: black;
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #111;
+      padding: 15px 40px;
+      border-bottom: 2px solid gold;
+    }
+
+    .logo {
+      height: 70px;
+      width: auto;
+      border-radius: 8px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: gold;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover, .active {
+      color: white;
+    }
+
+    .book-btn {
+      background-color: gold;
+      color: black;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .book-btn:hover {
+      background-color: white;
+      color: black;
+    }
+
+    /* ===== GALLERY SECTION ===== */
+    .gallery {
+      padding: 60px 40px;
+      text-align: center;
+    }
+
+    .gallery h1 {
+      color: gold;
+      font-size: 2.5em;
+      margin-bottom: 40px;
+    }
+
+    .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-container img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border: 3px solid gold;
+      border-radius: 12px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .gallery-container img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px gold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #111;
+      border-top: 2px solid gold;
+      color: gold;
+      font-size: 0.9em;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <img src="logo.jpg" alt="SK Events Logo" class="logo">
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <a href="https://www.instagram.com/sk_events_firework_decorations" target="_blank" class="book-btn">Book Now</a>
+  </header>
+
+  <!-- ===== GALLERY SECTION ===== -->
+  <section class="gallery">
+    <h1>Our Event Gallery</h1>
+
+   <div class="gallery-container">
+  <img src="haldi.jpg" alt="Haldi Setup">
+  <img src="wedding.jpg" alt="Wedding Stage">
+  <img src="reception.jpg" alt="Reception Decoration">
+  <img src="dining.jpg" alt="Dining Table Setup">
+  <img src="fireworks.jpg" alt="Firework Show">
+  <img src="entry.jpg" alt="Bride & Groom Entry">
+  <img src="stage.jpg" alt="Stage Decoration">
+  <img src="mehendi.jpg" alt="Mehendi Function">
+</div>
+
+
+
+  </section>
+
+  <footer>
+    © 2025 SK Events | Firework & Decoration | All Rights Reserved
+  </footer>
+
+</body>
+</html>
