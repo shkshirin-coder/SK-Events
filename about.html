@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | SK Events</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: black;
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #111;
+      padding: 15px 40px;
+      border-bottom: 2px solid gold;
+    }
+
+    .logo {
+      height: 70px;
+      width: auto;
+      border-radius: 8px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: gold;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover, .active {
+      color: white;
+    }
+
+    .book-btn {
+      background-color: gold;
+      color: black;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .book-btn:hover {
+      background-color: white;
+      color: black;
+    }
+
+    /* ABOUT SECTION */
+    .about-section {
+      padding: 80px 20px;
+      text-align: center;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .about-section h1 {
+      color: gold;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .about-section p {
+      font-size: 1.1em;
+      line-height: 1.8;
+      color: #ddd;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #111;
+      border-top: 2px solid gold;
+      color: gold;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="logo.jpg" alt="SK Events Logo" class="logo">
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <a href="https://www.instagram.com/sk_events_firework_decorations" target="_blank" class="book-btn">Book Now</a>
+  </header>
+
+  <section class="about-section">
+    <h1>About SK Events</h1>
+    <p>
+      At <strong>SK Events</strong>, we specialize in creating unforgettable celebrations that reflect your personality and style. 
+      From stunning stage decorations to magical fireworks, our team ensures that every detail shines with elegance and creativity.
+    </p>
+    <p>
+      With years of experience in event management and decoration, we have become a trusted name for weddings, haldi ceremonies, 
+      birthdays, and corporate functions. Our goal is simple — to make your special day truly extraordinary.
+    </p>
+    <p>
+      Whether it’s a grand event or an intimate celebration, SK Events brings your dream vision to life with golden sparkle and perfection.
+    </p>
+  </section>
+
+  <footer>
+    © 2025 SK Events | Firework & Decoration | All Rights Reserved
+  </footer>
+</body>
+</html>
