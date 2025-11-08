@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | SK Events</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: black;
+      color: white;
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* ===== VERTICAL SIDEBAR ===== */
+    header {
+      width: 220px;
+      background-color: #111;
+      border-right: 2px solid gold;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 0;
+      position: fixed;
+      height: 100vh;
+      top: 0;
+      left: 0;
+    }
+
+    .logo {
+      height: 80px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: gold;
+      font-weight: 500;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover, .active {
+      color: white;
+    }
+
+    .book-btn {
+      margin-top: 30px;
+      background-color: gold;
+      color: black;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .book-btn:hover {
+      background-color: white;
+      color: black;
+    }
+
+    /* ===== MAIN CONTENT ===== */
+    main {
+      margin-left: 240px;
+      flex: 1;
+      padding: 60px 40px;
+    }
+
+    h1 {
+      color: gold;
+      font-size: 2.5em;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    p {
+      color: #ddd;
+      max-width: 900px;
+      margin: 0 auto 30px;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    .card {
+      background-color: #111;
+      border: 2px solid gold;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      width: 90%;
+      max-width: 350px;
+      margin: 0 auto;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px gold;
+    }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .card h4 {
+      color: gold;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #111;
+      border-top: 2px solid gold;
+      color: gold;
+      font-size: 0.9em;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        width: 100%;
+        height: auto;
+        position: relative;
+        flex-direction: column;
+      }
+
+      main {
+        margin-left: 0;
+      }
+
+      nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== VERTICAL SIDEBAR ===== -->
+  <header>
+    <img src="logo.jpg" alt="SK Events Logo" class="logo">
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <a href="https://www.instagram.com/sk_events_firework_decorations" target="_blank" class="book-btn">Book Now</a>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+    <h1>About SK Events</h1>
+    <p>SK Events provides premium event decoration and fireworks for all types of celebrations.
+      Our goal is to create magical, elegant, and memorable moments for our clients.</p>
+
+    <div class="card">
+      <img src="card.jpg" alt="SK Events Work">
+      <h4>Our Work</h4>
+      <p>From breathtaking stage designs to elegant dining setups, we bring your vision to life with creative lighting, décor, and pyrotechnics.</p>
+    </div>
+
+    <footer>
+      © 2025 SK Events | Firework & Decoration | All Rights Reserved
+    </footer>
+  </main>
+
+</body>
+</html>
